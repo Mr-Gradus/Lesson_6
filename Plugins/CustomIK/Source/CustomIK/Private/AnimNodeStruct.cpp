@@ -65,7 +65,7 @@ void FAnimNode_CustomIK::EvaluateSkeletalControl_AnyThread(FComponentSpacePoseCo
 	else
 	{
 		LeftFoot.Offset += OffsetAlpha * (0.f - LeftFoot.Offset);
-		RightFoot.Offset += OffsetAlpha * (PelvisOffsetLeft - PelvisOffsetRight - RightFoot.Offset);
+		RightFoot.Offset += OffsetAlpha * (-PelvisOffsetLeft + PelvisOffsetRight - RightFoot.Offset);
 	}
 
 	LeftFoot.EffectorLocation = FVector(LeftFoot.Offset, 0.0f, 0.0f);
