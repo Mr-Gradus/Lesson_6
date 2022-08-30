@@ -1,5 +1,4 @@
 #include "AnimNodeStruct.h"
-
 #include "TwoBoneIK.h"
 #include "Animation/AnimInstanceProxy.h"
 #include "Components/CapsuleComponent.h"
